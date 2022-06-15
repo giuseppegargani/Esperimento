@@ -1,0 +1,42 @@
+pluginManagement {
+    /*repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
+        gradlePluginPortal()
+    }*/
+    buildscript {
+        repositories {
+            google()
+            jcenter()
+            mavenCentral()
+            maven { url 'https://www.jitpack.io' }
+            mavenLocal()
+        }
+        dependencies {
+            //classpath ':report:0.01'   // PER FLATDIR
+            //classpath 'com.github.giuseppegargani:report:0.01'   //PER MAVEN E INDICE SU PATH FINO A REPOSITORY E AGGIUNTA MAVENCENTRAL()!!!!
+            //classpath 'com.github.giuseppegargani.reportplugin:report:0.05'
+
+            //per il plugin
+            //classpath 'com.github.giuseppegargani.reportplugin:report:0.24'
+            classpath 'com.github.giuseppegargani.Ucoode:report:0.0.6'
+            //classpath 'com.github.giuseppegargani.Ucoode:instrumentedjson:0.0.6'
+
+            //classpath 'com.github.giuseppegargani:documenti:0.05'
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+rootProject.name = "Esperimento"
+include ':app'

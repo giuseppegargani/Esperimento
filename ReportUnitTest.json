@@ -1,0 +1,1 @@
+{"package_name":"com.example.esperimento","test_classes_list":[{"test_class_name":"ExampleUnitTest","tests_list":[{"outcome":"FAILURE","testName":"addition_isCorrect2"},{"outcome":"SKIPPED","testName":"addition_isCorrect3"},{"outcome":"SUCCESS","testName":"addition_isCorrect"}]}]}
